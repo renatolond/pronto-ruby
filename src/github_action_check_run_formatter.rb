@@ -10,7 +10,7 @@ module Pronto
       def format(messages, repo, _)
         self.messages = messages
         self.repo = repo
-        self.sha = ENV.fetch('GITHUB_SHA') { repo.head_commit_sha }
+        self.sha = repo.head_commit_sha
 
         Runner.runners.each do |runner|
           create_check_run(runner, messages_by_runner[runner] || [])
