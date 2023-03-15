@@ -38,7 +38,9 @@ if ARGV.include?('-r')
     ARGV.insert(runners_index, runners.split(' '))
   end
 end
+pronto_target_path = ENV.fetch('PRONTO_TARGET_PATH', nil)
+pronto_target_path = ENV.fetch('GITHUB_WORKSPACE', '/data') if pronto_target_path.nil?
 
-Dir.chdir(ENV.fetch('GITHUB_WORKSPACE', '/data')) do
+Dir.chdir(pronto_target_path) do
   Pronto::CLI.start
 end
