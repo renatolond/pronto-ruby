@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+system("git config --global --add safe.directory #{ENV["GITHUB_WORKSPACE"]}")
+
 require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
