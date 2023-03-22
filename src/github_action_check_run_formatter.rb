@@ -34,7 +34,7 @@ module Pronto
         output = OpenStruct.new(
           title: runner.title,
           summary: check_run_summary(runner, runner_messages),
-          annotations: line_annotations.map(&:to_h),
+          annotations: line_annotations.map(&:to_h).first(50),
         )
         if no_line_annotations.any?
           output.text = <<~TXT
