@@ -206,6 +206,8 @@ GEM
       rubocop (~> 1.0)
     rubocop-rspec (2.9.0)
       rubocop (~> 1.19)
+    rubocop-sequel (0.3.4)
+      rubocop (~> 1.0)
     rubocop-thread_safety (0.4.4)
       rubocop (>= 0.53.0)
     ruby-progressbar (1.13.0)
@@ -264,6 +266,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rake
   rubocop-rspec
+  rubocop-sequel
   rubocop-thread_safety
   webmock
 
