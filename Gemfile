@@ -27,6 +27,7 @@ gem 'rubocop-thread_safety', require: false
 gem 'rubocop-i18n', require: false
 gem 'rubocop-rake', require: false
 gem 'rubocop-sequel', require: false
+gem 'rubocop-yard', require: false
 
 group :test do
   gem 'climate_control'
