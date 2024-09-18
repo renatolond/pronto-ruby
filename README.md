@@ -36,7 +36,7 @@ A GitHub token is available by default when using actions, but you must include 
 Be sure to include the ENV variable in your job step:
 
 ```yaml
-    - uses: adwerx/pronto-ruby
+    - uses: renatolond/pronto-ruby
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -64,7 +64,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git fetch origin master --depth=1
-      - uses: adwerx/pronto-ruby@v2.8
+      - uses: renatolond/pronto-ruby@v4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -77,25 +77,6 @@ name: Pronto
       with:
         runners: >-
           rubocop rails_schema yamllint
-```
-
-With `eslint_npm` runner using locally installed eslint:
-
-```yaml
-name: Pronto
-# ...
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - run: git fetch origin master --depth=1
-      - uses: actions/setup-node@v1
-      - run: yarn install --ignore-optional --ignore-scripts --frozen-lockfile --non-interactive
-      - uses: adwerx/pronto-ruby@v2.8
-        with:
-          runners: eslint_npm # ...
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ### Development / Contributions
