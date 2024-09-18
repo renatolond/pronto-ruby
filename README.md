@@ -55,18 +55,23 @@ With the defaults (only rubocop):
 name: Pronto
 
 on:
-  - push
   - pull_request
 
 jobs:
   run:
+    permissions:
+      checks: write
+      contents: read
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: git fetch origin master --depth=1
-      - uses: renatolond/pronto-ruby@v4.0
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: renatolond/pronto-ruby@v4.0-r
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          target: origin/main
 ```
 
 With specific runners:
