@@ -27,7 +27,7 @@ COPY Gemfile* ./
 
 RUN bundle --retry 4
 
-ENV BUNDLE_GEMFILE /runner/Gemfile
+ENV BUNDLE_GEMFILE=/runner/Gemfile
 
 COPY . ./
 
