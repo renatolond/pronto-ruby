@@ -11,10 +11,10 @@ updates:
     versions:
     - ">= 0.13.a"
     - "< 0.14"
-    groups:
-      rubocop-dependencies:
-        patterns:
-          - "rubocop*"
-      pronto-dependencies:
-        patterns:
-          - "pronto*"
+  groups:
+    rubocop-dependencies:
+      patterns:
+        - "rubocop*"
+    pronto-dependencies:
+      patterns:
+        - "pronto*"
