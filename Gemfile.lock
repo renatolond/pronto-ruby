@@ -33,9 +33,6 @@ GEM
     brakeman (6.2.1)
       racc
     builder (3.3.0)
-    bundler-audit (0.9.0.1)
-      bundler (>= 1.2.0, < 3)
-      thor (~> 1.0)
     climate_control (1.2.0)
     code_analyzer (0.5.5)
       sexp_processor
@@ -147,9 +144,6 @@ GEM
     pronto-brakeman (0.11.2)
       brakeman (>= 3.2.0)
       pronto (~> 0.11.0)
-    pronto-bundler_audit (0.7.0)
-      bundler-audit (~> 0.8)
-      pronto (~> 0.11)
     pronto-erb_lint (0.1.6)
       erb_lint (~> 0.1, >= 0.1.1)
       pronto (~> 0.9, > 0.9.0)
@@ -178,8 +172,6 @@ GEM
     pronto-stylelint (0.10.3)
       pronto (>= 0.10, < 0.12)
       rugged (>= 0.24, < 2.0)
-    pronto-yamllint (0.2.0)
-      pronto (~> 0.11.0)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -301,7 +293,6 @@ DEPENDENCIES
   climate_control
   pronto
   pronto-brakeman
-  pronto-bundler_audit
   pronto-erb_lint
   pronto-eslint_npm
   pronto-fasterer
@@ -312,7 +303,6 @@ DEPENDENCIES
   pronto-rubocop
   pronto-scss
   pronto-stylelint
-  pronto-yamllint
   pry
   rb-readline
   rspec
