@@ -1,5 +1,7 @@
 Your all-in-one ruby Pronto runner.
 
+This is a reduced-scope fork of (AdWerx/pronto-ruby)[https://github.com/AdWerx/pronto-ruby], it only focus on Ruby, removing all of npm-related lints.
+
 This [GitHub Action](https://github.com/features/actions) runs [Pronto](https://github.com/prontolabs/pronto) [runners](https://github.com/prontolabs/pronto#runners) on your Ruby project diffs and reports back with a [GitHub Check Run](https://developer.github.com/apps/quickstart-guides/creating-ci-tests-with-the-checks-api/).
 
 ![check runs](static/checkrun.png)
@@ -12,17 +14,12 @@ The docker image of this Action includes the following [Pronto Runners](https://
 
 - brakeman
 - bundler_audit
-- eslint_npm
 - fasterer
 - flay
-- ~~poper~~ (removed—no support for pronto 0.11)
 - rails_best_practices
 - rails_schema
-- ~~rails_data_schema~~ (removed—no support for pronto 0.11)
 - reek
 - rubocop
-- scss
-- yamllint
 - stylelint
 
 # Inputs
