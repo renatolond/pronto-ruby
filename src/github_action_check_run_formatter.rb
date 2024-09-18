@@ -1,6 +1,8 @@
 require 'pronto'
 require_relative './annotation'
 
+require "ostruct"
+
 module Pronto
   module Formatter
     class GithubActionCheckRunFormatter < Base
