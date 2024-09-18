@@ -4,6 +4,9 @@ require_relative './annotation'
 module Pronto
   module Formatter
     class GithubActionCheckRunFormatter < Base
+      def self.name
+        "github_action_check_run"
+      end
 
       attr_accessor :messages, :repo, :sha, :check_run
 
@@ -84,15 +87,4 @@ module Pronto
   end
 end
 
-begin
-  warn_level = $VERBOSE
-  $VERBOSE = nil
-  Pronto::Formatter.const_set(
-    :FORMATTERS,
-    Pronto::Formatter::FORMATTERS.merge(
-      'github_action_check_run' => Pronto::Formatter::GithubActionCheckRunFormatter
-    )
-  )
-ensure
-  $VERBOSE = warn_level
-end
+Pronto::Formatter.register(Pronto::Formatter::GithubActionCheckRunFormatter)
