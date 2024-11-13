@@ -19,6 +19,7 @@ gem 'pronto-scss', require: false
 gem 'pronto-erb_lint', require: false
 gem 'pronto-stylelint', require: false
 
+gem "rubocop-factory_bot", require: false
 gem 'rubocop-performance', require: false
 gem 'rubocop-minitest', require: false
 gem 'rubocop-rspec', require: false

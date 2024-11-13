@@ -231,6 +231,8 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.32.3)
       parser (>= 3.3.1.0)
+    rubocop-factory_bot (2.26.1)
+      rubocop (~> 1.61)
     rubocop-i18n (3.0.0)
       rubocop (~> 1.0)
     rubocop-minitest (0.36.0)
@@ -307,6 +309,7 @@ DEPENDENCIES
   pry
   rb-readline
   rspec
+  rubocop-factory_bot
   rubocop-i18n
   rubocop-minitest
   rubocop-performance
