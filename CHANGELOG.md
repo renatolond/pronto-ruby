@@ -1,3 +1,35 @@
+4.2-r | 2025-01-13
+---
+Changes:
+* Bump the pronto-dependencies group with 4 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/30
+* Bump the rubocop-dependencies group across 1 directory with 5 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/29
+* Add rubocop-capybara gem by @renatolond in https://github.com/renatolond/pronto-ruby/pull/31
+* Bump ruby to 3.2.6 by @renatolond in https://github.com/renatolond/pronto-ruby/pull/32
+
+4.1-r | 2024-11-13
+---
+Changes:
+* Bump the rubocop-dependencies group with 2 updates by @dependabot in #16
+* Bump rspec from 3.11.0 to 3.13.0 by @dependabot in #13
+* Bump webmock from 3.23.1 to 3.24.0 by @dependabot in #18
+* Bump the rubocop-dependencies group across 1 directory with 4 updates by @dependabot in #23
+
+4.0-r | 2024-09-18
+---
+**BREAKING CHANGES:**
+
+ * Unlike the original action, this fork is focused on Ruby-only. This means any node-related runners are removed.
+
+ * Pronto is upgraded, the following runners are not yet compatible and therefore removed:
+   - pronto-bundler_audit
+   - pronto-yamllint
+
+Changes:
+ * Upgrades ruby to 3.2.2
+ * Upgrades Bundler to 2.4.3
+ * Bump rubocop to 1.66.1
+ * Upgrades all runners and dependencies
+
 4.0 | 2022-03-17
 ---
 
