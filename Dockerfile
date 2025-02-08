@@ -1,10 +1,8 @@
-FROM ruby:3.2-slim
+FROM ruby:3.3.7
 
 LABEL maintainer="Josh Bielick <jbielick@adwerx.com>"
 
-ARG BUNDLER_VERSION="2.3.8"
-ARG ESLINT_VERSION="7.32.0"
-ARG STYLELINT_VERSION="13.13.1"
+ARG BUNDLER_VERSION="2.6.3"
 ARG NODE_VERSION=14
 
 RUN apt-get update && apt-get install -y curl
