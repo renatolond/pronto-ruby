@@ -6,7 +6,8 @@
 source 'https://rubygems.org'
 
 gem 'pronto'
-gem 'pronto-brakeman', require: false
+# Source repo has been archived: https://github.com/prontolabs/pronto-brakeman
+gem 'pronto-brakeman', github: "storypark/pronto-brakeman", require: false
 gem 'pronto-bundler_audit', require: false
 gem 'pronto-eslint_npm', require: false
 gem 'pronto-rails_best_practices', require: false
