@@ -18,11 +18,11 @@ inputs:
     description: >-
       The git object to diff against when running pronto. Use this if you have a
       specific branch you'd like to always use as a target for the diff to be reviewed
-      and that branch is not master. This defaults to origin/master or the target
+      and that branch is not main. This defaults to origin/main or the target
       of the pull request being opened (when the event is pull_request).
     required: false
     default: >-
-      origin/master
+      origin/main
 runs:
   using: docker
   image: "docker://ghcr.io/apptweak/pronto-ruby:use_head_commit"
