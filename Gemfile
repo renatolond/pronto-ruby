@@ -34,7 +34,7 @@ gem 'rubocop-yard', require: false
 
 group :test do
   gem 'climate_control'
-  gem 'pry'
+  gem 'debug'
   gem 'rb-readline'
   gem 'rspec'
   gem 'webmock'
