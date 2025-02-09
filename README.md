@@ -27,10 +27,10 @@ The docker image of this Action includes the following [Pronto Runners](https://
 
 # Inputs
 
-| name | description | default |
-| --- | --- | --- |
-| `runners` | Space-separated list of pronto runners to run. Must be the preinstalled runners from the list above. | `rubocop` |
-| `target` | The git target pronto will diff against (`-c`) | `origin/master` |
+| name      | description                                                                                          | default         |
+| --------- | ---------------------------------------------------------------------------------------------------- | --------------- |
+| `runners` | Space-separated list of pronto runners to run. Must be the preinstalled runners from the list above. | `rubocop`       |
+| `target`  | The git target pronto will diff against (`-c`)                                                       | `origin/master` |
 
 # Secrets
 
@@ -39,9 +39,9 @@ A GitHub token is available by default when using actions, but you must include 
 Be sure to include the ENV variable in your job step:
 
 ```yaml
-    - uses: adwerx/pronto-ruby
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  - uses: apptweak/pronto-ruby
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 That's it!
@@ -66,8 +66,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: git fetch origin master --depth=1
-      - uses: adwerx/pronto-ruby@v2.8
+      - run: git fetch origin main --depth=1
+      - uses: apptweak/pronto-ruby@use_head_commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -94,7 +94,7 @@ name: Pronto
       - run: git fetch origin master --depth=1
       - uses: actions/setup-node@v1
       - run: yarn install --ignore-optional --ignore-scripts --frozen-lockfile --non-interactive
-      - uses: adwerx/pronto-ruby@v2.8
+      - uses: apptweak/pronto-ruby@use_head_commit
         with:
           runners: eslint_npm # ...
         env:

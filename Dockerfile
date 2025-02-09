@@ -1,19 +1,16 @@
-FROM ruby:3.2
+FROM ruby:3.3
 
-LABEL maintainer="Josh Bielick <jbielick@adwerx.com>"
+LABEL maintainer="QAWAII <info@apptweak.com>"
+LABEL org.opencontainers.image.source https://github.com/apptweak/pronto-ruby
 
-ARG BUNDLER_VERSION="2.3.8"
-ARG ESLINT_VERSION="7.32.0"
-ARG STYLELINT_VERSION="13.13.1"
+ARG BUNDLER_VERSION="2.6.3"
 ARG NODE_VERSION=14
-
-RUN apt-get update && apt-get install -y curl
 
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
-  ruby-dev \
   build-essential \
   cmake \
+  curl \
   git \
   pkg-config \
   openssl \
