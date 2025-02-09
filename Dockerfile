@@ -1,4 +1,4 @@
-FROM ruby:3.2-slim
+FROM ruby:3.2
 
 LABEL maintainer="Josh Bielick <jbielick@adwerx.com>"
 
@@ -10,7 +10,7 @@ ARG NODE_VERSION=14
 RUN apt-get update && apt-get install -y curl
 
 RUN apt-get update && \
-  apt-get install -y \
+  apt-get install -y --no-install-recommends \
   ruby-dev \
   build-essential \
   cmake \

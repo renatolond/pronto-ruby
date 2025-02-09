@@ -1,7 +1,7 @@
-name=adwerx/pronto-ruby
+name=ghcr.io/apptweak/pronto-ruby
 
 image:
-	docker build -f Dockerfile . -t ${name}:${TAG} -t ${name}:latest
+	docker build . -f Dockerfile --platform 'linux/amd64' -t ${name}:${TAG} -t ${name}:latest
 
 test: spec/fixtures/test.git
 	docker run -v "${CURDIR}:/runner" --workdir /runner --entrypoint /runner/dev_entrypoint.sh --rm ${name}:latest rspec
