@@ -1,5 +1,5 @@
 name: Pronto Ruby
-author: jbielick@adwerx.com
+author: info@apptweak.com
 description: |
   Run pronto code review runners on your commits and pull requests
   and get feedback as inline code annotations.
@@ -25,7 +25,7 @@ inputs:
       origin/master
 runs:
   using: docker
-  image: "docker://docker.io/renatolond/pronto-ruby:adapted"
+  image: "docker://ghcr.io/apptweak/pronto-ruby:adapted"
   args:
     - run
     - -r
