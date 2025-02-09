@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/storypark/pronto-brakeman.git
+  revision: dff26bfe31930f987a5ee72e99d18a6cdc91d40c
+  specs:
+    pronto-brakeman (0.11.2.pre.1)
+      brakeman (>= 3.2.0)
+      pronto (~> 0.11.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,6 +40,8 @@ GEM
       parser (>= 2.4)
       smart_properties
     bigdecimal (3.1.9)
+    brakeman (7.0.0)
+      racc
     builder (3.3.0)
     bundler-audit (0.9.2)
       bundler (>= 1.2.0, < 3)
@@ -301,6 +311,7 @@ PLATFORMS
 DEPENDENCIES
   climate_control
   pronto
+  pronto-brakeman!
   pronto-bundler_audit
   pronto-erb_lint
   pronto-eslint_npm
