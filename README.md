@@ -12,13 +12,10 @@ The docker image of this Action includes the following [Pronto Runners](https://
 
 - brakeman
 - bundler_audit
-- eslint_npm
 - fasterer
 - flay
-- ~~poper~~ (removed—no support for pronto 0.11)
 - rails_best_practices
 - rails_schema
-- ~~rails_data_schema~~ (removed—no support for pronto 0.11)
 - reek
 - rubocop
 - scss
