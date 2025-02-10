@@ -4,7 +4,6 @@ require_relative './annotation'
 module Pronto
   module Formatter
     class GithubActionCheckRunFormatter < Base
-
       attr_accessor :messages, :repo, :sha, :check_run
 
       def format(messages, repo, _)
@@ -23,7 +22,7 @@ module Pronto
         @client ||= Octokit::Client.new(
           api_endpoint: config.github_api_endpoint,
           web_endpoint: config.github_web_endpoint,
-          access_token: ENV.fetch('GITHUB_TOKEN') { config.github_access_token },
+          access_token: ENV.fetch('GITHUB_TOKEN') { config.github_access_token }
         )
       end
 
@@ -52,7 +51,7 @@ module Pronto
           started_at: Time.now.iso8601,
           status: :completed,
           completed_at: Time.now.iso8601,
-          accept: 'application/vnd.github.antiope-preview+json',
+          accept: 'application/vnd.github.antiope-preview+json'
         )
       end
 
@@ -72,14 +71,13 @@ module Pronto
                          event = JSON.parse(File.read(ENV.fetch('GITHUB_EVENT_PATH')))
                          event.fetch('repository').fetch('full_name')
                        else
-                         config.github_slug || fail('no github.slug in pronto config')
+                         config.github_slug || raise('no github.slug in pronto config')
                        end
       end
 
       def messages_by_runner
         @messages_by_runner ||= messages.uniq.group_by(&:runner)
       end
-
     end
   end
 end
