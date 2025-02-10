@@ -1,3 +1,4 @@
+require 'ostruct'
 require 'pronto'
 require_relative './annotation'
 
