@@ -27,6 +27,11 @@ module Pronto
     class GithubActionCheckRunFormatter < Base
       attr_accessor :messages, :repo, :sha, :check_run
 
+      # @return [String] The name of the formatter.
+      def self.name
+        'github_action_check_run'
+      end
+
       # Formats the messages into GitHub Action Check Runs.
       #
       # @param messages [Array<Pronto::Message>] The collection of messages to be formatted.
