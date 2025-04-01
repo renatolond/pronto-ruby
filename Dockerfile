@@ -14,6 +14,7 @@ RUN apt-get update && \
   git \
   pkg-config \
   openssl \
+  libgit2-dev \
   && rm -rf /var/lib/apt/lists/*
 
 RUN gem install bundler --version "${BUNDLER_VERSION}"
