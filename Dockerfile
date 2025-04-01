@@ -1,8 +1,8 @@
-FROM ruby:3.2.6-slim
+FROM ruby:3.2.8-slim
 
 LABEL maintainer="Josh Bielick <jbielick@adwerx.com>"
 
-ARG BUNDLER_VERSION="2.6.2"
+ARG BUNDLER_VERSION="2.6.6"
 
 RUN apt-get update && apt-get install -y curl
 
