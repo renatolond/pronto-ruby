@@ -25,7 +25,7 @@ inputs:
       origin/master
 runs:
   using: docker
-  image: "docker://docker.io/renatolond/pronto-ruby:v4.2-r"
+  image: "docker://docker.io/renatolond/pronto-ruby:v4.3-r"
   args:
     - run
     - -r

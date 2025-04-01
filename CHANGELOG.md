@@ -1,3 +1,18 @@
+4.3-r | 2025-04-01
+---
+Changes
+* Bump rubocop-rails from 2.28.0 to 2.29.0 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/33
+* Bump pronto-stylelint from 0.10.3 to 0.11.0 in the pronto-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/34
+* Bump the rubocop-dependencies group with 2 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/35
+* Update checkout version in workflow by @renatolond in https://github.com/renatolond/pronto-ruby/pull/36
+* Bump rubocop-rails from 2.29.0 to 2.29.1 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/37
+* Bump webmock from 3.24.0 to 3.25.0 by @dependabot in https://github.com/renatolond/pronto-ruby/pull/38
+* Bump the rubocop-dependencies group with 5 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/39
+* Bump the rubocop-dependencies group across 1 directory with 6 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/45
+* Bump webmock from 3.25.0 to 3.25.1 by @dependabot in https://github.com/renatolond/pronto-ruby/pull/44
+* Bump the rubocop-dependencies group with 7 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/46
+* Bump ruby to 3.2.8 by @renatolond in https://github.com/renatolond/pronto-ruby/pull/48
+
 4.2-r | 2025-01-13
 ---
 Changes:
