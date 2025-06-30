@@ -1,3 +1,14 @@
+4.4-r | 2025-06-30
+---
+Changes
+* Bump rubocop-rspec from 3.5.0 to 3.6.0 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/49
+* Bump the pronto-dependencies group across 1 directory with 2 updates by @dependabot in https://github.com/renatolond/pronto-ruby/pull/51
+* Bump rubocop-rails from 2.31.0 to 2.32.0 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/52
+* Bump rspec from 3.13.0 to 3.13.1 by @dependabot in https://github.com/renatolond/pronto-ruby/pull/53
+* Bump rubocop-minitest from 0.38.0 to 0.38.1 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/54
+* Bump rubocop-thread_safety from 0.7.2 to 0.7.3 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/55
+* Bump rubocop-yard from 0.10.0 to 1.0.0 in the rubocop-dependencies group by @dependabot in https://github.com/renatolond/pronto-ruby/pull/56
+
 4.3-r | 2025-04-01
 ---
 Changes
