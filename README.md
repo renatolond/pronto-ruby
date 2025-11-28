@@ -69,7 +69,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }} # checkout HEAD commit instead of merge commit
           fetch-depth: 50 # If your repository has long-living PRs, this might need to be higher
       - run: git fetch origin main
-      - uses: renatolond/pronto-ruby@v4.4-r
+      - uses: renatolond/pronto-ruby@v4.5-r
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
