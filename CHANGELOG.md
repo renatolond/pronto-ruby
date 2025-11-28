@@ -1,7 +1,12 @@
+4.6-r | 2025-11-28
+---
+Changes
+* Upgrade ruby to 3.3.x by @renatolond in https://github.com/renatolond/pronto-ruby/pull/70
+* Upgrade ruby to 3.4.7 by @renatolond in https://github.com/renatolond/pronto-ruby/pull/71
+
 4.5-r | 2025-11-28
 ---
 Changes
-## What's Changed
 * Bump rubocop-rails from 2.32.0 to 2.33.0 in the rubocop-dependencies group by @dependabot[bot] in https://github.com/renatolond/pronto-ruby/pull/57
 * Bump rubocop-rails from 2.33.0 to 2.33.3 in the rubocop-dependencies group by @dependabot[bot] in https://github.com/renatolond/pronto-ruby/pull/58
 * Bump the rubocop-dependencies group with 2 updates by @dependabot[bot] in https://github.com/renatolond/pronto-ruby/pull/59
