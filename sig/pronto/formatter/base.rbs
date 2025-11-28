@@ -1,0 +1,11 @@
+module Pronto
+  module Formatter
+    class Base
+      @config: untyped
+
+      def self.name: () -> untyped
+
+      def config: () -> untyped
+    end
+  end
+end

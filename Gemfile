@@ -32,9 +32,17 @@ gem "rubocop-yard", require: false
 
 gem "rugged", "< 1.7.1" # Rugged v1.7.1 introduces an issue with pronto, see https://github.com/prontolabs/pronto/issues/447 for updates
 
+group :development do
+  gem "rbs"
+  gem "steep"
+  gem "rbs-inline", require: false
+  gem "rerun", github: "alexch/rerun", require: false
+  gem "debug"
+  gem "solargraph"
+end
+
 group :test do
   gem "climate_control"
-  gem "pry"
   gem "rb-readline"
   gem "rspec"
   gem "webmock"

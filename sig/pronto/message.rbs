@@ -1,0 +1,47 @@
+module Pronto
+  class Message
+    @path: untyped
+
+    @line: untyped
+
+    @level: untyped
+
+    @msg: untyped
+
+    @runner: untyped
+
+    @commit_sha: untyped
+
+    attr_reader path: untyped
+
+    attr_reader line: untyped
+
+    attr_reader level: untyped
+
+    attr_reader msg: untyped
+
+    attr_reader commit_sha: untyped
+
+    attr_reader runner: untyped
+
+    LEVELS: ::Array[:info | :warning | :error | :fatal]
+
+    def initialize: (untyped path, untyped line, untyped level, untyped msg, ?untyped? commit_sha, ?untyped? runner) -> void
+
+    def full_path: () -> (untyped | nil)
+
+    def repo: () -> (untyped | nil)
+
+    def ==: (untyped other) -> untyped
+
+    alias eql? ==
+
+    def hash: () -> untyped
+
+    def to_h: () -> { path: untyped, line: untyped, level: untyped, msg: untyped, commit_sha: untyped, runner: untyped }
+
+    private
+
+    def comparison_attributes: () -> (::Array[:path | :msg | :level | :line] | ::Array[:path | :msg | :level | :commit_sha])
+  end
+end

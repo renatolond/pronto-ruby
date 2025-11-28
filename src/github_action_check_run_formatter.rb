@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# rbs_inline: enabled
 
 require "pronto"
 require_relative "annotation"
@@ -8,6 +9,7 @@ require "ostruct"
 module Pronto
   module Formatter
     class GithubActionCheckRunFormatter < Base
+      # @rbs return: String
       def self.name
         "github_action_check_run"
       end
@@ -63,6 +65,7 @@ module Pronto
         )
       end
 
+      #: (untyped runner, untyped runner_messages) -> String
       def check_run_summary(runner, runner_messages)
         if runner_messages.any?
           <<~TXT

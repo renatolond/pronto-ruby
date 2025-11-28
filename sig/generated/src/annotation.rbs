@@ -1,0 +1,20 @@
+# Generated from src/annotation.rb with RBS::Inline
+
+class Annotation
+  attr_reader message: ::Pronto::Message
+
+  # : (::Pronto::Message) -> void
+  def initialize: (::Pronto::Message) -> void
+
+  # @rbs return: bool
+  def line?: () -> bool
+
+  # @rbs return: { path: String, start_line: Integer, end_line: Integer, annotation_level: Symbol, message: String, title: String }
+  def to_h: () -> { path: String, start_line: Integer, end_line: Integer, annotation_level: Symbol, message: String, title: String }
+
+  # @rbs return: String
+  def to_markdown_s: () -> String
+
+  # @rbs (Symbol) -> Symbol
+  def level_for: (Symbol) -> Symbol
+end

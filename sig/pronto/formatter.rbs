@@ -1,0 +1,11 @@
+module Pronto
+  module Formatter
+    self.@formatters: untyped
+
+    def self.register: (untyped formatter_klass) -> untyped
+
+    def self.get: (untyped names) -> untyped
+
+    def self.names: () -> untyped
+  end
+end

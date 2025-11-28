@@ -1,0 +1,31 @@
+# Generated from src/github_action_check_run_formatter.rb with RBS::Inline
+
+module Pronto
+  module Formatter
+    class GithubActionCheckRunFormatter < Base
+      # @rbs return: String
+      def self.name: () -> String
+
+      attr_accessor messages: untyped
+
+      attr_accessor repo: untyped
+
+      attr_accessor sha: untyped
+
+      attr_accessor check_run: untyped
+
+      def format: (untyped messages, untyped repo, untyped _) -> untyped
+
+      def client: () -> untyped
+
+      def create_check_run: (untyped runner, untyped runner_messages) -> untyped
+
+      # : (untyped runner, untyped runner_messages) -> String
+      def check_run_summary: (untyped runner, untyped runner_messages) -> String
+
+      def repo_slug: () -> untyped
+
+      def messages_by_runner: () -> untyped
+    end
+  end
+end
