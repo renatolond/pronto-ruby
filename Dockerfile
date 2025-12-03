@@ -1,30 +1,34 @@
-FROM ruby:3.3
+FROM ruby:3.4.7
 
-LABEL maintainer="QAWAII <info@apptweak.com>"
-LABEL org.opencontainers.image.source https://github.com/apptweak/pronto-ruby
+LABEL maintainer="Devex <info@apptweak.com>"
+LABEL org.opencontainers.image.source="https://github.com/apptweak/pronto-ruby"
 
-ARG BUNDLER_VERSION="2.6.3"
-ARG NODE_VERSION=14
+ARG BUNDLER_VERSION="2.7.2"
+
+RUN apt-get update && apt-get install -y curl
 
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends \
+  apt-get install --no-install-recommends -y \
+  ruby-dev \
   build-essential \
   cmake \
-  curl \
   git \
   pkg-config \
   openssl \
+  libssl-dev \
+  libzstd-dev \
+  libz-dev \
   && rm -rf /var/lib/apt/lists/*
 
 RUN gem install bundler --version "${BUNDLER_VERSION}"
 
 WORKDIR /runner
 
-COPY Gemfile* ./
+COPY Gemfile* .bundle ./
 
-RUN bundle --retry 4
+RUN bundle install --retry 4
 
-ENV BUNDLE_GEMFILE /runner/Gemfile
+ENV BUNDLE_GEMFILE=/runner/Gemfile
 
 COPY . ./
 
